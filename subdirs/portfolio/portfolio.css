@@ -1,118 +1,122 @@
-body {
+/* NEW */ 
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root {
+    --vertical-spacing: 10px;
+    /* Change your font below*/
+    --main-font: "Titillium Web", sans-serif;
+}
+
+body{
     background-color: rgba(67, 154, 97, 0.488);
+    font-family: var(--main-font);
+    font-size: 17px;
+}
+
+h1:not(h1[class="header"]) {
+    margin: 0 auto;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #383838;
+    background: linear-gradient(180deg, #282828, #464646); 
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 0;
     font-weight: bold;
-    color: #fff;
 }
 
 nav {
-    background-color: gray;
+    background: linear-gradient(0deg, #282828, #464646);
 }
 
-ul {
+.header-class {
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-}   
-
-li {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
 }
 
-li a {
+.navbar li {
+    font-size: 25px;
+    border: 1px solid #464646;
+}
+
+.navbar li a {
     display: block;
     padding: 8px;
     color: white;
     text-align: center;
     text-decoration: none;
+    margin: 0px;
 }
 
-li a:hover {
+.navbar li a:hover {
     background-color: #313131;
 }
 
-.portfolio-box {
-    background-color: #313131;
-    color: white;
-    padding: 20px;
+.has-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.portfolio-box h1, h3 {
-    font-family: Arial, Helvetica, sans-serif;
-	text-align: left;
-    font-weight: bold;
+.has-image img {
+    width: 10%;
+    text-align: right;
 }
 
-.orange {
-    display: contents;
-    vertical-align: top;
-    color: orange;
-}
-
-.portfolio-box center {
-    font-family: Arial, Helvetica, sans-serif;
-	text-align: center;
-}
-
-.description {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-}
-
-.description ul {
-    list-style-type: disc;
-    padding: 5px;
-    display: inline-block ;
-}
-  
-.description li::marker {
+.special {
+    background-color: #383838;
     color: #fff;
+    width: 120px;
+    height: 40px;
+    margin: 0px;
+    padding: 1px 6px;
+    border: 1px outset white;
+    border-radius: 3px;
+    text-decoration: none;
 }
 
-.example {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-}
-
-.example ul {
-    list-style-type: disc;
-    padding: 5px;
-    display: inline-block ;
-}
-  
-.example li::marker {
-    color: #fff;
-}
-
-.orange {
-    display: contents;
-    vertical-align: top;
+a {
     color: orange;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
-.orangetxt {
-    display: inline;
-}
-  
 footer {
     background-color: #383838;
     color: #fff;
-    text-align: center;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p {
+    max-width: fit-content;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 10px;
+    margin:0 auto;
+}
+
+.portfolio-box h1, h3 {
+	text-align: left;
+    font-weight: bold;
 }

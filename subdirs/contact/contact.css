@@ -1,28 +1,47 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root {
+    --vertical-spacing: 10px;
+    /* Change your font below*/
+    --main-font: "Titillium Web", sans-serif;
+}
+
+body{
     background-color: rgba(67, 154, 97, 0.488);
+    font-family: var(--main-font);
+    font-size: 17px;
+}
+
+h1:not(h1[class="header"]), h4 {
+    margin: 0 auto;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #383838;
+    background: linear-gradient(180deg, #282828, #464646); 
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 0;
     font-weight: bold;
-    color: #fff;
-}
-
-h4 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
 }
 
 nav {
-    background-color: gray;
+    background: linear-gradient(0deg, #282828, #464646);
 }
 
-ul {
+.header-class {
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -30,64 +49,74 @@ ul {
     justify-content: center;
 }
 
-li {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+.navbar li {
+    font-size: 25px;
+    border: 1px solid #464646;
 }
 
-li a {
+.navbar li a {
     display: block;
     padding: 8px;
     color: white;
     text-align: center;
     text-decoration: none;
+    margin: 0px;
 }
 
-li a:hover {
+.navbar li a:hover {
     background-color: #313131;
 }
 
-.block {
-    background-color: #313131;
-    color: white;
-    padding: 20px;
-}
-
-.block h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-}
-
-.block li {
-    font-size: larger;
-}
-
-.block p {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.media {
+.has-image {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.media button {
+.has-image img {
+    width: 10%;
+    text-align: right;
+}
+
+a.special:not(a[class="first"]) {
     background-color: #383838;
-    border-color: #fff;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
     width: 120px;
     height: 40px;
-    margin-right: 5px;
+    margin: 0px;
+    padding: 1px 6px;
+    border: 1px outset white;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-left: 3px;
+    margin-right: 3px;
 }
-  
+
+a.special[class="first"] {
+    margin-right: 3px;
+}
+
+a {
+    color: orange;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
 footer {
     background-color: #383838;
     color: #fff;
-    text-align: center;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p {
+    max-width: fit-content;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 10px;
+    margin:0 auto;
 }

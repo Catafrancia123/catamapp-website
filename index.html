@@ -1,59 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>catamapp's website</title>
-    <link rel="shortcut icon" href="pictures/pfp.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script src="packages/TweenMax.min.js"></script>
+    <link rel="shortcut icon" href="pictures/pfp.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom_css.css" />
+    
     <script src="index.js" defer></script>
   </head>
-  
+
   <body>
-    <header>
-        <h1><center>Welcome to catamapp's website</center></h1>
-        <img src="pictures/pfp.jpg" alt="pfp">
-    </header>
-    <nav>
+    <div class="header-class">
+      <header>
+        <h1>Welcome to catamapp's website</h1>
+        <img src="pictures/pfp.jpg" alt="pfp" />
+      </header>
+      <nav class="navbar">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="subdirs/news/news.html">News</a></li>
-            <li><a href="subdirs/projects/projects.html">Projects</a></li>
-            <li><a href="subdirs/contact/contact.html">Contact</a></li>
-            <li><a href="subdirs/about/about.html">About</a></li>
-            <li><a href="subdirs/portfolio/portfolio.html">Portfolio</a></li>
-        </ul> 
-    </nav>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="subdirs/news/news.html">News</a></li>
+          <li><a href="subdirs/projects/projects.html">Projects</a></li>
+          <li><a href="subdirs/contact/contact.html">Contact</a></li>
+          <li><a href="subdirs/about/about.html">About</a></li>
+          <li><a href="subdirs/portfolio/portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
     <br />
-    
+
     <!-- main menu lol-->
-    <div class="block">
-      <h1>Welcome!</h1>
-      <h2>Top news:</h2>
-      <div class="thumbnail" onclick="homeclickarticle()">
-        <img src="pictures/dc-down.png" alt="dc-down">
+    <div class="box-dark-1">
+      <h1 style="font-size: 50px">Welcome!</h1>
+      <h2 style="font-size: 30px">Top news:</h2>
+      <div class="thumbnail" onclick="home_click_article()">
+        <img src="pictures/dc-down.png" alt="dc-down" />
         <h2>Discord is down! Here is what you need to know.</h2>
-        <span id="date"></span>
+        <p id="news_date"></p>
       </div>
       <br />
       <div class="tips">
         <h2>Tips:</h2>
         <div id="orangetxt">
-          <p>The color <a class="orange" href="about:blank">orange</a> means its a link.</p>
+          <p>
+            The color: <a href="about:blank">orange</a> means its
+            a link.
+          </p>
         </div>
-        <br />
         <p>You are now using a&nbsp;<span id="deviceHtml"></span>.</p>
         <p><i>hehe boi i spy on you (jk)</i></p>
-      </div>  
+      </div>
       <div id="updlog">
-        <h2>Update Log: (1.1.4)</h2>
-        <p>New Portfolio.</p>
+        <h2>Update Log: (1.2):</h2>
+        <ul>
+          <li>Full website rebrand</li>
+        </ul>
       </div>
     </div>
+    <br />
 
     <footer>
-      <p>&copy; 2024 catamapp | ver. 1.1.4 | compiled 28-2-2024</p>
-    </footer>    
-</body>
+      <p>&copy; 2023-2026 catamapp | ver. 1.2 | compiled 13-06-2026</p>
+    </footer>
+  </body>
 </html>

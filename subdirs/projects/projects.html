@@ -1,82 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>catamapp's website</title>
-    <link rel="shortcut icon" href="../../pictures/pfp.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="projects.css">
-    <script src="packages/TweenMax.min.js"></script>
-    <script src="projects.js"></script>
+    <link
+      rel="shortcut icon"
+      href="../../pictures/pfp.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="../../custom_css.css" />
   </head>
 
   <body>
-    <header>
-        <h1><center>Projects catamapp is on</center></h1>
-        <img src="../../pictures/pfp.jpg" alt="pfp">
-    </header>
-    <nav>
+    <div class="header-class">
+      <header>
+        <h1 class="header">catamapp's projects</h1>
+        <img src="../../pictures/pfp.jpg" alt="pfp" />
+      </header>
+      <nav class="navbar">
         <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="../news/news.html">News</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="../contact/contact.html">Contact</a></li>
-            <li><a href="../about/about.html" onclick="about()">About</a></li>
-            <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../news/news.html">News</a></li>
+          <li><a href="../projects/projects.html">Projects</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+          <li><a href="../about/about.html">About</a></li>
+          <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
     <br />
 
-    <div class="block">
-        <h1>Games</h1>
-        <ol>
-            <li class="cli">
-                <div class="cli-detail">
-                  <h2>ProgressCMD</h2>
-                  <p>A simple catch the block game in a terminal.</p>
-                  <button onclick="cmdlink()">Download</button>
-                </div>
-                <div class="cli-img">
-                  <img src="../../pictures/cli.png" alt="cli">
-                </div>
-            </li>
-            <li class="under">
-                <div class="under-detail">
-                    <h2>Backrooms Unlimited</h2>
-                    <p>A Unlimited Backrooms Game took from the wiki.</p>
-                    <button onclick="rolink()">Playtest</button>
-                </div>
-            </li>
-        </ol>    
-        <br />
+    <div class="box-dark-1">
+      <h1>What I've Made:</h1>
+      <ul>
+        <li>
+          <div class="has-image">
+            <div>
+              <h2>ProgressCMD</h2>
+              <p>The continuing of the original <a href="https://github.com/Delta-Code-Repository/ProgressCLI95">ProgressCLI95</a>, I remade the entire game from scratch.</p>
+              <a class="special" href="https://progressbar95-community.itch.io/terminal95">Download</a>
+            </div>
+            <img src="../../pictures/cli.png" alt="cli" />
+          </div>
+        </li>
+        <li>
+          <div>
+            <h2>COSUB</h2>
+            <p>Short for Catamapp's Open Source Utilities Bot, a discord bot that can handle any of your utility needs. <br/> Includes: Points, Events, Shifts, and many more.</p>
+            <a class="special" href="https://github.com/Catafrancia123/cosub">Check it out</a>
+          </div>
+        </li>
+      </ul>
+      <br />
 
-        <h1>Websites</h1>
-        <ol>
-            <li class="web">
-                <div class="web-detail">
-                    <h2>catamapp website</h2>
-                    <p>Personal website you are on right now.</p>
-                </div>
-            </li>
+      <h1>Websites</h1>
+      <ol>
+        <li>
+          <div>
+            <h2>catamapp website</h2>
+            <p>Personal website you are on right now.</p>
+          </div>
+        </li>
 
-            <li class="web-old">
-                <div class="web-old-detail">
-                    <h2>Catafrancia website (old)</h2>
-                    <p>Personal website that I made in <a class="sololearn" href="https://sololearn.com">Sololearn</a> (cringe)</p>
-                    <button onclick="oldweb()">Visit</button>
-                </div>
-                <div class="web-old-img">
-                    <img src="../../pictures/sololearn.png" alt="sololearn">
-                </div>
-            </li>
-        </ol>      
-
-            
+        <li>
+          <div class="has-image">
+            <div>
+              <h2>Catafrancia website (old)</h2>
+              <p>Personal website that I made in <a class="sololearn" href="https://sololearn.com">Sololearn</a> previously </p>
+              <a class="special" href="https://www.sololearn.com/compiler-playground/W07l1L38KZq9">Check it out</a>
+            </div>
+            <img src="../../pictures/sololearn.png" alt="sololearn" />
+          </div>
+        </li>
+      </ol>
     </div>
     <br />
 
     <footer>
-        <p>&copy; 2024 catamapp | ver. 1.1.4 | compiled 28-2-2024</p>
+      <p>&copy; 2023-2026 catamapp | ver. 1.2 | compiled 13-06-2026</p>
     </footer>
   </body>
 </html>

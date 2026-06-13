@@ -1,37 +1,57 @@
-var device = "";
+function get_device() {
+    let device = "";
 
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    device = "phone"
-    document.getElementById("deviceHtml").innerHTML = device;
-} else {
-    device = "computer"
-    document.getElementById("deviceHtml").innerHTML = device;
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        device = "phone"
+        document.getElementById("deviceHtml").innerHTML = device;
+    } else {
+        device = "computer"
+        document.getElementById("deviceHtml").innerHTML = device;
+    }
 }
   
-
-function homeclickarticle() {
+function home_click_article() {
     location.href = "subdirs/news/articles/discord down/discord-down.html"
     sessionStorage.setItem("clickedhome", true)
 }
 
-function updateDate() {
-    // Get the current date
-    var currentDate = new Date();
+function news_date() {
+    let current_date = new Date();
+    let created_date = new Date("2023-09-29");
+    let current_year = current_date.getFullYear();
+    let created_year = created_date.getFullYear();
 
-    // Format the date as desired (e.g., "Month Day, Year")
-    var formattedDate = currentDate.toLocaleDateString('en-US', {
+    let formatted_date = created_date.toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
     });
 
-    // Update the content of the <h1> element
-    document.getElementById('newsdate').textContent = "News as of " + formattedDate;
+    document.getElementById('news_date').textContent = `News as of ${formatted_date}`;
+
+    let date_number = Number(current_date) - Number(created_date);
+    let days_temp = Math.floor(date_number / 86400000);
+    let days = 0;
+    let months = 0;
+    let years = 0;
+    
+    while (days_temp > 365) {
+        days_temp -= 365
+        years += 1  
+    }
+    while (days_temp > 30) {
+        days_temp -= 30
+        months += 1
+    }
+
+    days = days_temp
+    if ( months > 1 ) { // is it outdated?
+        document.getElementById('news_date').textContent += ` (Outdated by ${years} years, ${months} months, ${days} days)`;
+    }
 }
 
-// Call the updateDate function to set the initial date
-updateDate();
+news_date();
+get_device();
 
 // Set an interval to update the date every day (in milliseconds)
-setInterval(updateDate, 24 * 60 * 60 * 1000); // 24 hours * 60 minutes * 60 seconds * 1000 milliseconds
-
+//setInterval(updateDate, 24 * 60 * 60 * 1000); // 24 hours * 60 minutes * 60 seconds * 1000 milliseconds

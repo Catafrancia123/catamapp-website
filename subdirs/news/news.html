@@ -1,59 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>catamapp's website</title>
-    <link rel="shortcut icon" href="../../pictures/pfp.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="news.css">
-    <script src="../../packages/TweenMax.min.js"></script>
+    <link
+      rel="shortcut icon"
+      href="../../pictures/pfp.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="news.css" />
+    <link rel="stylesheet" href="../../custom_css.css" />
     <script src="news.js"></script>
+    <script src="../../packages/TweenMax.min.js"></script>
   </head>
-  <body>
-    <header>
-        <h1><center>Catamapp news</center></h1>
-        <img src="../../pictures/pfp.jpg" alt="pfp">
-    </header>
-    <nav>
-        <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="../projects/projects.html">Projects</a></li>
-            <li><a href="../contact/contact.html">Contact</a></li>
-            <li><a href="../about/about.html" onclick="about()">About</a></li>
-            <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
-        </ul>
-    </nav>
-    <br />
-    
-    <div class="news-box">
-      <h1 id="newsdate">News as of 29-9-2023</h1>
-      <div class="thumbnails">
-        <div class="thumbnaildc" onclick="news3()">
-          <img src="../../pictures/dc-down.png" alt="dc-down">
-          <h2>Discord is down! Here is what you need to know.</h2>
 
-        </div>
-        <div class="thumbnail2" onclick="news2()">
-          <img src="../../pictures/sad-ghost.png" alt="sad-ghost">
-          <h2>Catamapp is a sad ghost :(</h2>
-          
+  <body>
+    <div class="header-class">
+      <header>
+        <h1>Catamapp Technology News</h1>
+        <img src="../../pictures/pfp.jpg" alt="pfp" />
+      </header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="../projects/projects.html">Projects</a></li>
+          <li><a href="../contact/contact.html">Contact</a></li>
+          <li><a href="../about/about.html" onclick="about()">About</a></li>
+          <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+    <br />
+
+    <div class="box-dark-1">
+      <h1 id="news_date" style="text-align: center; margin-top: 0px;"></h1>
+      <div class="thumbnails"> 
+        <!-- REMEMBER: MINOR NEWS ON THE BOTTOM!-->
+        <div class="thumbnaildc major-news" onclick="news3()">
+          <img src="../../pictures/dc-down.png" alt="dc-down" />
+          <h2>Discord is down! Here is what you need to know.</h2>
         </div>
         <div class="thumbnail" onclick="news1()">
-          <img src="../../pictures/hired.png" alt="hired">
+          <img src="../../pictures/hired.png" alt="hired" />
           <h2>Catamapp gets a job!</h2>
         </div>
+        <div class="thumbnail2 minor-news" onclick="news2()">
+          <img src="../../pictures/sad-ghost.png" alt="sad-ghost" />
+          <h2>Catamapp is a sad ghost :(</h2>
+        </div>
       </div>
-      <br >
-      <div class="daily-text">
-         <h2>Daily news <s>everyday!</s> everymonth!</h2>
-      </div>
-      <p>pls help me design this page, im bad at css, dm me on <a class="discord" href="../contact/contact.html">discord</a> for more info</p>
     </div>
     <br />
 
     <footer>
-      <p>&copy; 2024 catamapp | ver. 1.1.4 | compiled 28-2-2024</p>
+      <p>&copy; 2023-2026 catamapp | ver. 1.2 | compiled 13-06-2026</p>
     </footer>
-</body>
+  </body>
 </html>

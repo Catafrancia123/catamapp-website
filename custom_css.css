@@ -1,0 +1,43 @@
+/* Hi! You are using catamapp's custom CSS plugin. */
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root {
+    --vertical-spacing: 10px;
+    /* Change your font below*/
+    --main-font: "Titillium Web", sans-serif;
+}
+
+.box-dark-1 {
+    background: linear-gradient(180deg, #282828, #464646); 
+    border: 2px solid white;
+    border-radius: 5px;
+    text-align: justify;
+    padding: 1rem;
+    margin-bottom: var(--vertical-spacing);
+    color: white;
+}
+
+.box-githubdark {
+    --github-color: rgb(31,140,235);
+    background-color: rgb(50,50,50);
+    border: 5px solid var(--github-color);
+    border-left-style: solid;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    margin-bottom: var(--vertical-spacing);
+    padding-left: 1rem;
+}
+
+.box-githubdark-title {
+	font-size: 20px;
+    padding-top: var(--vertical-spacing);
+    color: var(--github-color)
+}
+
+.box-githubdark p {
+    padding-bottom: var(--vertical-spacing);
+    color: white;
+    text-align: left;
+}
